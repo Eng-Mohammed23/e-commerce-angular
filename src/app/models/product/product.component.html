@@ -1,0 +1,23 @@
+
+
+<div class="row row-cols-1 row-cols-md-4 g-4">
+    @for(pro of selectedProduct; track pro.id){
+      <div class="col" >
+        <div class="card" appHighlightcard="yellow" hascolor="blue">
+          <img [src]="pro.imgUrl" class="card-img-top" alt="...">
+          <div class="card-body" >
+            <h5 class="card-title">{{pro.name}}</h5>
+            <h3 *ngIf="pro.price!=50;else lastItem">price : {{pro.price}}</h3>
+            <ng-template #lastItem>price : is cheaper</ng-template>
+            <p class="card-text">This is a longer card with This content is a little bit longer.</p>
+            <input type="number" #countInp/>  
+            <button class="btn btn-outline-success" (click)="buy(countInp.value,pro.price)">Buy</button>
+            <button class="btn btn-outline-primary" (click)="navigatToDetails(pro.id)">Details</button>
+          </div>
+        </div>
+      </div> 
+    }
+</div>
+    
+
+<h2>{{test}}</h2>

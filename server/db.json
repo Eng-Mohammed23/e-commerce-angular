@@ -1,0 +1,90 @@
+{
+  "products": [
+    {
+      "id": "100",
+      "name": "pizza",
+      "price": 150,
+      "quantity": 45,
+      "imgUrl": "assets/images/images.jfif",
+      "catId": 1
+    },
+    {
+      "id": "200",
+      "name": "cake",
+      "price": 200,
+      "quantity": 10,
+      "imgUrl": "assets/images/images.jfif",
+      "catId": 2
+    },
+    {
+      "id": "300",
+      "name": "soap",
+      "price": 50,
+      "quantity": 11,
+      "imgUrl": "assets/images/images.jfif",
+      "catId": 3
+    },
+    {
+      "id": "400",
+      "name": "chacklet",
+      "price": 250,
+      "quantity": 30,
+      "imgUrl": "assets/images/images.jfif",
+      "catId": 4
+    },
+    {
+      "id": "500",
+      "name": "shepsi",
+      "price": 150,
+      "quantity": 45,
+      "imgUrl": "assets/images/images.jfif",
+      "catId": 1
+    },
+    {
+      "id": "600",
+      "name": "Tomaom",
+      "price": 200,
+      "quantity": 10,
+      "imgUrl": "assets/images/images.jfif",
+      "catId": 2
+    },
+    {
+      "id": "700",
+      "name": "opp",
+      "price": 50,
+      "quantity": 11,
+      "imgUrl": "assets/images/images.jfif",
+      "catId": 3
+    },
+    {
+      "id": "800",
+      "name": "pjjkd",
+      "price": 250,
+      "quantity": 30,
+      "imgUrl": "assets/images/images.jfif",
+      "catId": 4
+    },
+    {
+      "id": "900",
+      "name": "checken",
+      "price": 250,
+      "quantity": 30,
+      "imgUrl": "assets/images/images.jfif",
+      "catId": 4
+    },
+    {
+      "id": "d064",
+      "name": "macron1"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "soap"
+    },
+    {
+      "id": "2",
+      "name": "cake"
+    }
+  ]
+}

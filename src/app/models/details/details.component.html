@@ -1,0 +1,10 @@
+<p>details works!</p>
+<h1>{{product?.name}}</h1>
+<h2>{{product?.id}}</h2> 
+<button class="btn btn-success" (click)="goBack()">Back</button>
+
+<img src="{{[product?.imgUrl]}}" alt="">
+<div>
+    <button class="btn btn-primary" [disabled]="currentId==idsArr[0]" (click)="goPrev()">Prev</button>
+    <button class="btn btn-primary" [disabled]="currentId==idsArr[idsArr.length-1]" (click)="goNext()">Next</button>
+</div>

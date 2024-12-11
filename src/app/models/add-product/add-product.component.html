@@ -1,0 +1,47 @@
+<form (submit)="addNewProduct()" #addPrdForm="ngForm">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Name</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+      [(ngModel)]="newProduct.name" name="name" #prdName="ngModel"
+      required pattern="^[a-zAZ]{3,5}$">
+      @if(prdName.invalid && prdName.touched){
+    <div class="text-danger">
+        @if(prdName.errors?.['required']){
+            <p>Name is required</p>
+        }
+        
+        @if(prdName.errors?.['pattern']){
+            <p>name is force  to 3 to 5</p>
+        }
+    </div>
+      }
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Price</label>
+        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        [(ngModel)]="newProduct.price" name="price" #prdName="ngModel">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">quantity</label>
+        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        [(ngModel)]="newProduct.quantity" name="quantity" #prdName="ngModel">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Image</label>
+        <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        [(ngModel)]="newProduct.imgUrl" name="imgUrl" #prdName="ngModel">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Category</label>
+        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        [(ngModel)]="newProduct.catId" name="catId" #prdName="ngModel">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+    
+    
+    <button type="submit" class="btn btn-primary" [disabled]="addPrdForm.invalid">Submit</button>
+  </form>
